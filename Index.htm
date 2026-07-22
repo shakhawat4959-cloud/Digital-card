@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD SHAKHAWAT - Digital Card</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 15px;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            width: 100%;
+            max-width: 380px;
+            border-radius: 24px;
+            padding: 35px 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Top Decorative Accent */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #d4af37, #f39c12, #d4af37);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            font-size: 13px;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons Container */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 14px 20px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn i {
+            font-size: 20px;
+        }
+
+        /* Gradient Button Themes */
+        .btn-call {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #059669, #10b981);
+        }
+
+        .btn-tiktok {
+            background: linear-gradient(135deg, #000000, #111827);
+            border: 1px solid rgba(37, 244, 238, 0.3);
+        }
+
+        .btn-facebook {
+            background: linear-gradient(135deg, #1d4ed8, #2563eb);
+        }
+
+        .btn-instagram {
+            background: linear-gradient(135deg, #833AB4, #FD1D1D, #FCB045);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            color: #64748b;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <h1>MD SHAKHAWAT</h1>
+            <p>Digital Business Card</p>
+        </div>
+
+        <div class="btn-container">
+            <!-- Phone Call -->
+            <a href="tel:+8801814461039" class="btn btn-call">
+                <i class="fa-solid fa-phone-flip"></i> Save Contact / Call
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/8801814461039" target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@skgaming9900" target="_blank" class="btn btn-tiktok">
+                <i class="fa-brands fa-tiktok"></i> TikTok
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/1GMgadVRA3/" target="_blank" class="btn btn-facebook">
+                <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/mdshakhawat" target="_blank" class="btn btn-instagram">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 MD SHAKHAWAT. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+</html>
